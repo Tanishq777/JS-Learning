@@ -25,3 +25,24 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);
+
+
+// Stack Memory saves primitive data types, directly gives copy of datatype
+// Heap Memory saves all Non-primitive data types, gives reference of datatype
+
+let a = 3
+let b = a
+b = 4
+
+console.log(a);
+console.log(b);
+
+let arr = [1,2,3]
+let brr = arr
+brr[1] = 0
+
+console.log(arr[1]);
+console.log(brr[1]);
+
+
+
