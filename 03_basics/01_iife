@@ -1,0 +1,16 @@
+// Immidiately Invoked Function Expression (IIFE)
+
+// named IIFE == function name presence
+(function chai(){
+ console.log("DB Connected");
+})();   // semi-colon is necessary to separate 2 iife's
+
+// unnamed IIFE
+(() =>{
+console.log("Hello");
+})();
+
+
+((name)=>{
+    console.log(`Name is ${name}`);
+})("Tanishq")
